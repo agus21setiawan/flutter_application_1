@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/InfoItem.dart';
 import 'package:flutter_application_1/datalist.dart';
 
 class DashBoard extends StatefulWidget {
@@ -124,7 +124,12 @@ class _DashBoardState extends State<DashBoard> {
                                       top: 5,
                                     )),
                                     ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (_) => Infoitem()));
+                                        },
                                         style: ElevatedButton.styleFrom(
                                             primary: Colors.white,
                                             shape: StadiumBorder()),
